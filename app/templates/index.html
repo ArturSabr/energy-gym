@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static%}
+{% block active_home %}nav-item active{% endblock %}
 {% block content %}
     <!-- slider section -->
   <div class="hero_area">
@@ -342,7 +343,7 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Consectetur
+                  Consecteturы
                 </h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -460,7 +461,14 @@
     </div>
   </section>
   <!-- end contact section -->
-
+<script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
 
 
 {% endblock %}

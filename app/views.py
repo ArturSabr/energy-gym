@@ -32,7 +32,7 @@ class About(ListView):
     model = NewsModel
     queryset = NewsModel.objects.all()[:3]
     context_object_name = 'news'
-    template_name = 'contact.html'
+    template_name = 'about.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -45,7 +45,7 @@ class Contact(ListView):
     model = NewsModel
     queryset = NewsModel.objects.all()[:3]
     context_object_name = 'news'
-    template_name = 'about.html'
+    template_name = 'contact.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
