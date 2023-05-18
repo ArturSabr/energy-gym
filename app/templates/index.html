@@ -144,90 +144,22 @@
         </h2>
       </div>
       <div class="service_container">
+        {% for i in service %}
         <div class="box">
-          <img src="{% static '/images/s-1.jpg' %}" alt="">
+          <img src="{{ i.image.url }}" alt="">
           <h6 class="visible_heading">
-            CROSSFIT TRAINING
+            {{i.title}}
           </h6>
           <div class="link_box">
             <a href="">
               <img src="{% static '/images/link.png' %}" alt="">
             </a>
             <h6>
-              CROSSFIT TRAINING
+              {{i.title}}
             </h6>
           </div>
         </div>
-        <div class="box">
-          <img src="{% static '/images/s-2.jpg' %}" alt="">
-          <h6 class="visible_heading">
-            FITNESS
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="{% static '/images/link.png' %}" alt="">
-            </a>
-            <h6>
-              FITNESS
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="{% static '/images/s-3.jpg' %}" alt="">
-          <h6 class="visible_heading">
-            DYNAMIC STRENGTH TRAINING
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="{% static '/images/link.png' %}" alt="">
-            </a>
-            <h6>
-              DYNAMIC STRENGTH TRAINING
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="{% static '/images/s-4.jpg' %}" alt="">
-          <h6 class="visible_heading">
-            HEALTH
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="{% static '/images/link.png' %}" alt="">
-            </a>
-            <h6>
-              HEALTH
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="{% static '/images/s-5.jpg' %}" alt="">
-          <h6 class="visible_heading">
-            WORKOUT
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="{% static '/images/link.png' %}" alt="">
-            </a>
-            <h6>
-              WORKOUT
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="{% static '/images/s-6.jpg' %}" alt="">
-          <h6 class="visible_heading">
-            STRATEGIES
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="{% static '/images/link.png' %}" alt="">
-            </a>
-            <h6>
-              STRATEGIES
-            </h6>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
