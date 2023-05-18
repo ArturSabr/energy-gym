@@ -18,7 +18,7 @@ class Home(ListView):
 class Service(ListView):
     model = ServiceModel
     queryset = ServiceModel.objects.all()
-    context_object_name = 'service'
+    context_object_name = 'services'
     template_name = 'service.html'
 
     # def get_context_data(self, **kwargs):
